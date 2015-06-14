@@ -6,5 +6,5 @@
 ?>
 
 <?php if(isset($_GET["wetter"])){?>
-<title><?php echo $info["wetter"];?></title>
+<title><?php echo mb_substr($info["wetter"], 0, 1, 'utf-8');?></title>
 <?php }?>
